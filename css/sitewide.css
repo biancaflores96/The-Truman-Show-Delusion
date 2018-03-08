@@ -1,0 +1,298 @@
+/* ------------------------------------------------------------ */
+/* imports and utilities */
+
+/* 3rd-party CSS files */
+@import 'vendor/h5bp-head.css';
+@import 'vendor/normalize.css';
+@import 'vendor/h5bp-tail.css';
+
+/* use a more intuitive box sizing model (http://is.gd/wNVjAo) */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Scale down images and embedded videos so they don't overflow their parents */
+img, object { max-width: 100%;}
+
+/*	Development/layout aid. Remove the comments
+	on this rule in order to draw boxes around DIVs
+	and other elements used for layout. */
+/* 
+div, main, article, section, aside, hgroup, header, footer, address, nav {
+	border: 1px solid rgba(255,0,0,0.15) !important;
+	background: rgba(255,0,0,0.05) !important;		
+}
+*/
+
+
+/* ------------------------------------------------------------ */
+/* start project-specifc styles below this line */
+
+body {
+	font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+	color: #ffffff;
+	background-image: url("https://oscar.ofm.co.za//media/1/1/4/129/fcad88f4-2a4f-41ef-a6e5-daccd16e2ddb.jpg");
+	background-color: transparent;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: contain;
+
+}
+
+/*	Generally, you will only want one container element in
+	the document, wrapping around the main content area. 
+	If you have more than one container, you are probably doing
+	something wrong. 	
+*/
+.container {
+	margin-top: 0em;
+	margin-right: 2em;
+	margin-bottom: 3em;
+	margin-left: 0em;
+	width: 70%;
+	max-width: 1200px;
+	padding: 1em;
+	text-align: left;
+	line-height: 2em;
+	font-size: 56px;
+	text-decoration: underline;
+	text-decoration-style: dotted;
+	text-decoration-color: gold;
+	position: static;
+
+}
+.container p{
+	font-size: 15px;
+	line-height: 0em;
+	text-decoration: none;
+	font-style: italic;
+	margin-left: -1em;
+}
+html:after {
+    content : "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:black;
+    width: 100%;
+    height: 100%;
+    opacity : 0.8;
+    z-index: -1;
+}
+
+.links{
+	text-align: center;
+	margin-left: -40em;
+	margin-bottom: 0em;
+	margin-top: -13em;
+	padding: 0em;
+	padding-color:#fff;
+	background-color: #000
+	font-size: 3em;
+	letter-spacing: .45em;
+	color: rgba(85,195,201,0)
+	width: 60px;
+
+}
+
+.links a{
+	color: #fff;
+	outline: 1.5px solid grey;
+	text-decoration:none;
+	margin-right: auto;
+	text-align:center;
+	color:white;
+	background:black;
+}
+.links a:hover {
+	background:grey;
+}
+.links li{
+	list-style-type: none;
+	display: inline;
+	list-style-position: center;
+
+}
+.background{
+	text-align: center;
+	font-size: 30px;
+
+}
+.background img{
+	margin-top: 1em;
+	margin-left: 1.5em;
+}
+
+.backgroundlinkss ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: red;
+}
+
+.backgroundlinkss li {
+    float: left;
+
+}
+
+.backgroundlinkss li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: red;
+    font-size: 20px;
+}
+
+.backgroundlinkss a:hover{
+	background: white;
+	color:black;
+
+}
+	
+.backgroundtext p{
+	text-align: justify;
+	padding-left: 20em;
+	padding-right: 20em;
+	line-height: 2em;
+	font-size: 18px;
+
+}
+.trumanshow h2{
+	text-align: center;
+	font-size: 50px;
+	padding-left: 1em;
+	letter-spacing: 0.25em;
+
+}
+.trumanshow img{
+	margin-left: 36em;
+	margin-top: 1em;
+	bottom: 0;
+	right: 0;
+}
+.trumantext p{
+	text-align: justify;
+	padding-left: 20em;
+	padding-right: 20em;
+	margin-top: 1em;
+	line-height: 2em;
+	font-size: 18px;
+}
+.psychiatrygrid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 50px 50px 50px 50px 50px 50px auto;
+	column-width: 300px;
+	mox-column-width: 300px;
+	webkit-column-width: 300px;
+	column-count: 2;
+	column-rule-style: solid;
+	column-rule-width: 1px;
+	column-rule-color: red;
+	column-span: all;
+	display: table-cell;
+	font-size: 12px;
+	margin-right: 2em;
+	
+}
+.backgroundpsychiatry h1{
+	margin-left: 10em;
+	font-size: 50px;
+}
+.backgroundpsychiatry img{
+	margin-top: -6.5em;
+	margin-left: 45em;
+	text-align: center;
+}
+
+.psychiatrytext {
+	font-size: 12px;
+	margin-left: 3em;
+}
+.psychiatrytext img{
+	margin-left: 3em;
+}
+p {
+	font-size: 12px;
+	margin-left: 2em;
+}
+.TrumanSyndrome p{
+	margin-right: 3em;
+}
+h2 {
+	font-size: 40px;
+	margin-top: -0.15em;
+	text-decoration: underline;
+	text-decoration-color:gold;
+}
+h3 {
+	font-size: 40px;
+	margin-left: 1em;
+	margin-top: 10em;
+	text-decoration: underline;
+	text-decoration-color:gold;
+}
+h4{
+	font-size: 20px;
+	margin-bottom: -25px;
+	margin-left: 1em;
+	text-decoration: underline;
+	text-decoration-color:gold;
+}
+
+.backgroundlinks ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: red;
+}
+
+.backgroundlinks li {
+    float: left;
+
+}
+
+.backgroundlinks li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: red;
+    font-size: 20px;
+}
+
+/* Change the link color to #111 (black) on hover */
+.backgroundlinks li a:hover {
+    background-color: white;
+    color: black;
+}
+
+.cases p{
+	margin-top: 0em;
+	padding-right: 45em;
+	text-align: justify;
+}
+.casetitle{
+	text-align: left;
+	padding-top: 2em;
+}
+
+.caseimages{
+	margin-left: 50em;
+	margin-top: -22em;
+}
+
+
+
+
+
+
+
+
+
